@@ -1,0 +1,22 @@
+{
+  "name": "sample3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"budo index.js:bundle.js --open --live"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "budo": "^11.6.2",
+    "vueify": "^9.4.1"
+  },
+  "browserify":{
+    "transform":["vueify"]
+  }
+}
