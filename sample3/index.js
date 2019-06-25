@@ -1,6 +1,7 @@
-const Vue = require("vue");
+import Vue from "vue";
+import Home from "./Home.vue";
 
 new Vue({
     el:"#app",
-    render: r => r(require("./Home.vue"))
+    render: r => r(Home)
 })

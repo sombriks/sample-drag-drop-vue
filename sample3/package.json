@@ -4,19 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"budo index.js:bundle.js --open --live"
+    "dev": "budo index.js:bundle.js --open --live -- -p esmify -p tinyify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-smooth-dnd": "^0.8.0"
   },
   "devDependencies": {
     "budo": "^11.6.2",
+    "esmify": "^2.1.1",
+    "tinyify": "^2.5.1",
     "vueify": "^9.4.1"
   },
-  "browserify":{
-    "transform":["vueify"]
+  "browserify": {
+    "transform": [
+      "vueify"
+    ]
   }
 }

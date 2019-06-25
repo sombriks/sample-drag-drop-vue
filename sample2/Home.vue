@@ -11,6 +11,7 @@
 </template>
 
 <script>
+// https://github.com/SortableJS/Vue.Draggable#value
 const draggable = require("vuedraggable");
 module.exports = {
   name: "Home",
@@ -19,9 +20,8 @@ module.exports = {
     return {
       root: { i: -1, val: "Root", children: [] },
       current: null,
-      debu1:{},
-      debu2:{},
-      
+      debu1: {},
+      debu2: {}
     };
   },
   created() {
@@ -38,12 +38,12 @@ module.exports = {
   },
   methods: {
     dragin(data) {
-        this.debu1=data
-      console.log("in: " + (data));
+      this.debu1 = data;
+      console.log("in: " + data);
     },
     dragout(data) {
-        this.debu2=data
-      console.log("out: " + (data));
+      this.debu2 = data;
+      console.log("out: " + data);
     }
   }
 };
